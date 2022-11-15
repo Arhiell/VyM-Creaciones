@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    height: 100px;
+    background-color: rgb(69, 68, 68);
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: rgb(49, 175, 133);
+    font-weight: 200;
+}
+
+.menu a{
+    color: rgb(49, 175, 133);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #fff;
+}
+
+#check{
+    display: none;
+}
+
+/* Titulo y Parrafo*/
+
+#titulo{
+    padding: 20px 40px;
+    background-image: url(/IMG/imagen.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido-titulo{
+    text-align: center;
+}
+.contenido-titulo h3 {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 10px 0px;
+    color: rgb(235, 235, 235);
+}
+.contenido-titulo h3 span{
+    font-weight: 600;
+}
+
+.contenido-titulo p{
+    padding: 0 10px;
+    color:#fff;
+    font-size: 25px;
+}
+
+/* MATERIALES */
+
+#material{
+    background-color: rgb(46, 46, 46);
+    padding: 60px;
+}
+.title{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(49, 175, 133);
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 30px 0px 50px;
+}
+
+.containe-materiales {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.containe-materiales .boxfrasco {
+    height: 11rem;
+    width: 17rem;
+    background: #e5e2e2;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 12px; 
+    background-image: url(/IMG/frasco.jfif);
+}
+
+.containe-materiales .boxfrasco h3 {
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(49, 175, 133);
+}
+
+.containe-materiales .boxpintura {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 12px; 
+    background-image: url(/IMG/pintura.jfif);
+}
+
+.containe-materiales .boxpintura h3 {
+    padding: 20px;
+    font-size: 20px;
+    color: #000
+}
+
+.containe-materiales .boxpincel {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 12px; 
+    background-image: url(/IMG/pincel.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.containe-materiales .boxpincel h3 {
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(49, 175, 133);
+}
+
+.containe-materiales .boxsorbete {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 12px; 
+    background-image: url(/IMG/sorbete.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containe-materiales .boxsorbete h3 {
+    padding: 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+
+/* PASOS A SEGUIR */
+.seguir {
+    background: #8c8787;
+    padding: 70px;
+}
+
+.seguir{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.seguir .pasoI {
+    height: 12rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 12px; 
+    background-image: url(IMG/lavar.jfif);
+}
+
+.seguir .pasoI h3 {
+    padding: 20px;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+.seguir .pasoI p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #ffff;
+}
+
+.seguir .pasoII {
+    height: 12rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 12px; 
+    background-image: url(IMG/diseño.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.seguir .pasoII h3 {
+    padding: 20px;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+.seguir .pasoII p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #ffff;
+}
+
+.seguir .pasoIII {
+    height: 12rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 12px; 
+    background-image: url(IMG/pintar.jfif);
+}
+
+.seguir .pasoIII h3 {
+    padding: 20px;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+.seguir .pasoIII p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 1px;
+}
+
+.seguir .pasoIV {
+    height: 12rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 12px; 
+    background-image: url(IMG/tapa.jfif);
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+.seguir .pasoIV h3 {
+    padding: 20px;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+.seguir .pasoIV p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #000000;
+}
+
+.fin{
+    background-color: rgb(179, 179, 179);
+}
+.fin{
+    padding: 55px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.fin h3{
+    padding: 30px;
+    font-size: 35px;
+}
+
+.fin .etapaV {
+    height: 17rem;
+    width: 17rem;
+    background: #101010;
+    text-align: left;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 14px; 
+    background-image: url(IMG/VASO.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.fin .terminado{
+    color: #000000;
+}
+
+footer{
+    background-color: rgb(1, 1, 1);
+    color: #ccccccc4;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+@media(max-width:768px ){
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(69, 68, 68);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0 ;
+    }
+
+    /* titulo */
+
+    #titulo{
+        padding: 30px 40px;
+        margin: 10px;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contenido-titulo{
+        text-align: center;
+    }
+    .contenido-titulo h3 {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: 200;
+        padding: 5px 0px;
+        color: rgb(235, 235, 235);
+    }
+    .contenido-titulo h3 span{
+        font-weight: 400;
+    }
+    .contenido-titulo p {
+        margin: 8px;
+        font-size: 23px;
+        color: #fff;
+        padding: 5px;
+    }
+}
+
+@media(max-width: 568px){
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(69, 68, 68);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0 ;
+    }
+
+    /* titulos */
+    #titulo{
+        padding: 30px 40px;
+        margin: 10px;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contenido-titulo{
+        text-align: center;
+    }
+    .contenido-titulo h3 {
+        font-size: 20px;
+        font-weight: 100;
+        padding: 5px 0px;
+        color: rgb(235, 235, 235);
+    }
+    .contenido-titulo h3 span{
+        font-weight: 400;
+    }
+    .contenido-titulo p {
+        margin: 4px;
+        font-size: 18px;
+        color: #fff;
+        padding: 5px;
+    }
+}
